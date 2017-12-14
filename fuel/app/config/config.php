@@ -84,7 +84,7 @@ return array(
 	/**
 	 * Internal string encoding charset
 	 */
-	// 'encoding'  => 'UTF-8',
+	'encoding'  => 'UTF-8',
 
 	/**
 	 * DateTime settings
@@ -93,7 +93,7 @@ return array(
 	 * default_timezone		optional, if you want to change the server's default timezone
 	 */
 	// 'server_gmt_offset'  => 0,
-	// 'default_timezone'   => null,
+	'default_timezone'   => null,
 
 	/**
 	 * Logging Threshold.  Can be set to any of the following:
@@ -105,9 +105,10 @@ return array(
 	 * Fuel::L_INFO
 	 * Fuel::L_ALL
 	 */
-	// 'log_threshold'    => Fuel::L_WARNING,
-	// 'log_path'         => APPPATH.'logs/',
-	// 'log_date_format'  => 'Y-m-d H:i:s',
+	 'log_threshold'    => Fuel::L_WARNING,
+	 'log_file'         => 'admin-' . date('Ymd') . '.log',
+	 'log_path'         => APPPATH.'logs/',
+	 'log_date_format'  => 'Y-m-d H:i:s',
 
 	/**
 	 * Security settings
@@ -190,15 +191,15 @@ return array(
 	 */
 	// 'cookie' => array(
 		// Number of seconds before the cookie expires
-		// 'expiration'  => 0,
+		'expiration'  => 0,
 		// Restrict the path that the cookie is available to
-		// 'path'        => '/',
+		'path'        => '/',
 		// Restrict the domain that the cookie is available to
-		// 'domain'      => null,
+		'domain'      => null,
 		// Only transmit cookies over secure connections
-		// 'secure'      => false,
+		'secure'      => false,
 		// Only transmit cookies over HTTP, disabling Javascript access
-		// 'http_only'   => false,
+		'http_only'   => false,
 	// ),
 
 	/**
@@ -285,7 +286,7 @@ return array(
 		 *
 		 * A path must be set in module_paths for this to work.
 		 */
-		// 'modules'  => array(),
+		'modules'  => array(),
 
 		/**
 		 * Classes to autoload & initialize even when not used

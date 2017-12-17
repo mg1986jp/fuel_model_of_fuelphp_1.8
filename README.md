@@ -14,6 +14,14 @@ FuelPHP is a fast, lightweight PHP 5.3+ framework. In an age where frameworks ar
 
 FuelPHP is fully PHP 7 compatible.
 
+## problem
+
+・Oil がデータベースに接続できないがアプリケーションは接続できる。
+http://fuelphp.jp/docs/1.8/installation/troubleshooting.html#/oil_db_error
+・コマンドでscaffoldなどDBに関わる操作ができない
+phpのversionを確認する。
+ver7.1.5以上であれば7.0.19以下に落としてみる。
+
 ## More information
 
 For more detailed information, see the [development wiki](https://github.com/fuelphp/fuelphp/wiki).

@@ -27,7 +27,7 @@ modulesをご使用の場合でも最低限、全てのdb.phpは必ず管理対�
 ## トラブルシューティング
 
 * Oil がデータベースに接続できないがアプリケーションは接続できる。  
-http://fuelphp.jp/docs/1.8/installation/troubleshooting.html#/oil_db_error  
+http://fuelphp.jp/docs/1.8/installation/troubleshooting.html#oil_db_error  
 * コマンドでscaffoldなどDBに関わる操作ができない。  
 phpのversionを確認する。  
 ver7.1.5以上であれば7.0.19以下に落としてみる。  

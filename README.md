@@ -8,35 +8,30 @@
 * [Development branch API browser](http://dev-api.fuelphp.com)
 * [Support Forum](http://fuelphp.com/forums) for comments, discussion and community support
 
-## Description
+## 説明
 
-FuelPHP is a fast, lightweight PHP 5.3+ framework. In an age where frameworks are a dime a dozen, We believe that FuelPHP will stand out in the crowd.  It will do this by combining all the things you love about the great frameworks out there, while getting rid of the bad.
+db.phpの初期値はMAMPでの利用を想定した設定としています。  
+db.phpの設定をご自身の開発環境以外（本番環境およびステージング環境）にする場合は、セキュリティー観点から管理対象外としてください。  
+modulesをご使用の場合でも最低限、全てのdb.phpは必ず管理対象外としてください。  
 
-FuelPHP is fully PHP 7 compatible.
+.gitignore  
+* /fuel/app/config/db.php  
+* /fuel/app/config/*/db.php  
+* /fuel/app/config/auth.php  
+* /fuel/app/config/simpleauth.php  
+* /fuel/app/modules/*/config/db.php  
+* /fuel/app/modules/*/config/*/db.php  
+* /fuel/app/modules/*/config/auth.php  
+* /fuel/app/modules/*/config/simpleauth.php  
 
-## More information
+## トラブルシューティング
 
-For more detailed information, see the [development wiki](https://github.com/fuelphp/fuelphp/wiki).
+* Oil がデータベースに接続できないがアプリケーションは接続できる。  
+http://fuelphp.jp/docs/1.8/installation/troubleshooting.html#oil_db_error  
+* コマンドでscaffoldなどDBに関わる操作ができない。  
+phpのversionを確認する。  
+ver7.1.5以上であれば7.0.19以下に落としてみる。  
 
-##Development Team
+### 開発者
 
-* Harro Verton - Project Manager, Developer ([http://wanwizard.eu/](http://wanwizard.eu/))
-* Steve West - Core Developer, ORM
-* Márk Sági-Kazár - Developer
-
-### Want to join?
-
-The FuelPHP development team is always looking for new team members, who are willing
-to help lift the framework to the next level, and have the commitment to not only
-produce awesome code, but also great documentation, and support to our users.
-
-You can not apply for membership. Start by sending in pull-requests, work on outstanding
-feature requests or bugs, and become active in the #fuelphp IRC channel. If your skills
-are up to scratch, we will notice you, and will ask you to become a team member.
-
-### Alumni
-
-* Frank de Jonge - Developer ([http://frenky.net/](http://frenky.net/))
-* Jelmer Schreuder - Developer ([http://jelmerschreuder.nl/](http://jelmerschreuder.nl/))
-* Phil Sturgeon - Developer ([http://philsturgeon.co.uk](http://philsturgeon.co.uk))
-* Dan Horrigan - Founder, Developer ([http://dhorrigan.com](http://dhorrigan.com))
+* Masaya Goto - Developer ([https://legendary-se.jp/](https://legendary-se.jp/))

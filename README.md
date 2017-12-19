@@ -22,8 +22,8 @@
 ## Precautions
 
 ### composer.lock
-composer update の実行ではcontent-hashがオーバーライドされます。
-管理対象に含めても（コミットしても）構いませんが、各ブランチが持つ意味にcomposer.lockが含まれることを嫌う人は、ワーキングツリーに残したままにするか管理対象外にしてしまうと良いでしょう。
+composer update の実行ではcontent-hashがオーバーライドされます。  
+管理対象に含めても（コミットしても）構いませんが、各ブランチが持つ意味にcomposer.lockが含まれることを嫌う人は、ワーキングツリーに残したままにするか管理対象外にしてしまうと良いでしょう。  
 
 ### .gitignore
 セキュリティー的な観点から下記を管理対象外とすることを推奨します。  
@@ -50,9 +50,10 @@ docsを必要としなければ削除可能です。
 ## trouble shooting
 * Oil がデータベースに接続できないがアプリケーションは接続できる。  
 [FuelPHP - トラブルシューティング](http://fuelphp.jp/docs/1.8/installation/troubleshooting.html#oil_db_error)を参照。  
+
 * ターミナル上でscaffoldなどDBに関わる操作ができない。  
 phpのversionが7.1.5以上であればStringをIntegerにキャストしていないことが原因です。  
 phpのversionを7.1.5以下に下げることで解決します。（ex:7.0.19）
 
-### Developer
+## Developer
 * [Masaya Goto](https://legendary-se.jp/)

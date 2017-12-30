@@ -18,6 +18,9 @@
         "phpseclib/phpseclib": "2.0.0",
         "michelf/php-markdown": "1.4.0"
     },
+    "require-dev": {
+        "zircote/swagger-php": "*"
+    },
     "suggest": {
         "dwoo/dwoo" : "Allow Dwoo templating with the Parser package",
         "mustache/mustache": "Allow Mustache templating with the Parser package",

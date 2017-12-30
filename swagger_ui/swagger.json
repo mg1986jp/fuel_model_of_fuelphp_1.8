@@ -1,0 +1,45 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "API Document",
+        "description": "\u4e00\u822c\u30e6\u30fc\u30b6\u30fc\u304b\u3089\u547c\u3070\u308c\u308b API",
+        "version": "1.0.0"
+    },
+    "paths": {
+        "/Dev/personal/fuel_model_of_fuelphp_1.8/public/ranking/index": {
+            "post": {
+                "tags": [
+                    "hoge"
+                ],
+                "summary": "\u30c6\u30b9\u30c8\u6295\u7a3f",
+                "description": "\u30ea\u30af\u30a8\u30b9\u30c8\u3055\u308c\u305f\u6570\u3092\u8fd4\u3059",
+                "produces": [
+                    "application/json",
+                    "application/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "number",
+                        "in": "query",
+                        "description": "\u4f5c\u54c1 ID",
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u6210\u529f",
+                        "schema": {
+                            "properties": {
+                                "is_success": {
+                                    "description": "\u767b\u9332\u6210\u529f\u78ba\u8a8d\u30d5\u30e9\u30b0",
+                                    "type": "boolean"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {}
+}
